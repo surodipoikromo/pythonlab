@@ -1,0 +1,11 @@
+/.phpunit.cache
+/vendor
+.env
+.phpunit.result.cache
+/public/hot
+/storage/*.key
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*.log
+!.gitignore
