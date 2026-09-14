@@ -1,0 +1,252 @@
+[
+    {
+        "slug": "hello-world",
+        "title": "Hello World",
+        "icon": "👋",
+        "summary": "Mengenal Python dan menjalankan program pertama.",
+        "objectives": [
+            "Memahami bentuk program Python sederhana",
+            "Menggunakan fungsi print()",
+            "Mengenali komentar satu baris"
+        ],
+        "content": [
+            {
+                "title": "Program pertama",
+                "text": "Python menggunakan sintaks yang ringkas. Fungsi print() menampilkan teks atau nilai ke layar. Teks ditulis di dalam tanda kutip."
+            },
+            {
+                "title": "Komentar",
+                "text": "Baris yang diawali tanda # adalah komentar. Komentar membantu menjelaskan kode dan tidak dijalankan oleh Python."
+            }
+        ],
+        "example": "# Program Python pertama\nprint(\"Hello, World!\")\nprint(\"Saya sedang belajar Python.\")",
+        "starter": "print(\"Hello, World!\")\n",
+        "exercise": "Tampilkan nama kamu pada baris pertama dan kalimat “Saya belajar Python” pada baris kedua.",
+        "solution": "print(\"Budi\")\nprint(\"Saya belajar Python\")"
+    },
+    {
+        "slug": "variabel",
+        "title": "Variabel",
+        "icon": "📦",
+        "summary": "Menyimpan nilai ke dalam nama yang mudah digunakan kembali.",
+        "objectives": [
+            "Membuat variabel",
+            "Mengubah nilai variabel",
+            "Menampilkan isi variabel"
+        ],
+        "content": [
+            {
+                "title": "Apa itu variabel?",
+                "text": "Variabel adalah nama yang menunjuk ke suatu nilai. Python tidak meminta kita menuliskan tipe variabel saat membuatnya."
+            },
+            {
+                "title": "Aturan nama",
+                "text": "Nama variabel boleh berisi huruf, angka, dan underscore, tetapi tidak boleh diawali angka. Gunakan nama yang menggambarkan isinya."
+            }
+        ],
+        "example": "nama = \"Alya\"\numur = 19\nprint(nama)\nprint(umur)\n\numur = 20\nprint(\"Umur baru:\", umur)",
+        "starter": "nama = \"Python\"\nprint(nama)\n",
+        "exercise": "Buat variabel nama, kota, dan umur. Tampilkan ketiganya dalam satu kalimat menggunakan print().",
+        "solution": "nama = \"Alya\"\nkota = \"Jambi\"\numur = 19\nprint(nama, \"berusia\", umur, \"tahun dan tinggal di\", kota)"
+    },
+    {
+        "slug": "tipe-data",
+        "title": "Tipe Data",
+        "icon": "🔤",
+        "summary": "Mengenal string, integer, float, dan boolean.",
+        "objectives": [
+            "Mengenali tipe data dasar",
+            "Menggunakan type()",
+            "Melakukan konversi tipe sederhana"
+        ],
+        "content": [
+            {
+                "title": "Empat tipe dasar",
+                "text": "str menyimpan teks, int menyimpan bilangan bulat, float menyimpan bilangan desimal, dan bool menyimpan True atau False."
+            },
+            {
+                "title": "Memeriksa dan mengubah tipe",
+                "text": "Gunakan type() untuk memeriksa tipe data. Fungsi int(), float(), dan str() dapat digunakan untuk konversi sederhana."
+            }
+        ],
+        "example": "nama = \"Rina\"\numur = 21\ntinggi = 1.62\naktif = True\n\nprint(type(nama))\nprint(type(umur))\nprint(type(tinggi))\nprint(type(aktif))",
+        "starter": "angka = \"25\"\nprint(type(angka))\n",
+        "exercise": "Buat string \"100\", ubah menjadi integer, tambahkan 50, lalu tampilkan hasil dan tipenya.",
+        "solution": "angka = \"100\"\nangka = int(angka)\nhasil = angka + 50\nprint(hasil)\nprint(type(hasil))"
+    },
+    {
+        "slug": "operator",
+        "title": "Operator",
+        "icon": "➗",
+        "summary": "Melakukan perhitungan dan perbandingan nilai.",
+        "objectives": [
+            "Menggunakan operator aritmetika",
+            "Menggunakan operator perbandingan",
+            "Mengenal operator logika"
+        ],
+        "content": [
+            {
+                "title": "Aritmetika",
+                "text": "Operator +, -, *, /, //, %, dan ** digunakan untuk operasi angka."
+            },
+            {
+                "title": "Perbandingan dan logika",
+                "text": "Operator ==, !=, >, <, >=, <= menghasilkan boolean. Operator and, or, dan not menggabungkan kondisi."
+            }
+        ],
+        "example": "a = 10\nb = 3\nprint(\"Tambah:\", a + b)\nprint(\"Bagi:\", a / b)\nprint(\"Sisa:\", a % b)\nprint(\"Pangkat:\", a ** 2)\nprint(\"a lebih besar?\", a > b)",
+        "starter": "harga = 12000\njumlah = 3\nprint(harga * jumlah)\n",
+        "exercise": "Harga barang Rp25.000 dengan diskon 20%. Hitung dan tampilkan harga setelah diskon.",
+        "solution": "harga = 25000\ndiskon = 20 / 100\nharga_akhir = harga - (harga * diskon)\nprint(harga_akhir)"
+    },
+    {
+        "slug": "input-output",
+        "title": "Input dan Output",
+        "icon": "⌨️",
+        "summary": "Menerima data pengguna dan menampilkan hasilnya.",
+        "objectives": [
+            "Menggunakan input()",
+            "Mengolah input yang selalu berupa string",
+            "Menggunakan f-string untuk output"
+        ],
+        "content": [
+            {
+                "title": "Menerima input",
+                "text": "Fungsi input() membaca masukan pengguna. Pada lab ini, input akan muncul sebagai dialog browser. Nilai dari input() selalu berupa string."
+            },
+            {
+                "title": "Output dengan f-string",
+                "text": "f-string memudahkan menyisipkan variabel ke dalam teks dengan menulis f sebelum string dan variabel di dalam kurung kurawal."
+            }
+        ],
+        "example": "nama = input(\"Siapa nama kamu? \")\numur = input(\"Berapa umur kamu? \")\nprint(f\"Halo {nama}, umur kamu {umur} tahun.\")",
+        "starter": "nama = input(\"Nama: \")\nprint(f\"Halo, {nama}!\")\n",
+        "exercise": "Minta pengguna memasukkan panjang dan lebar sebagai angka. Hitung lalu tampilkan luas persegi panjang.",
+        "solution": "panjang = float(input(\"Panjang: \"))\nlebar = float(input(\"Lebar: \"))\nluas = panjang * lebar\nprint(f\"Luas = {luas}\")"
+    },
+    {
+        "slug": "percabangan",
+        "title": "Percabangan",
+        "icon": "🔀",
+        "summary": "Menjalankan kode berbeda berdasarkan kondisi.",
+        "objectives": [
+            "Menggunakan if",
+            "Menambahkan elif dan else",
+            "Memahami indentasi blok"
+        ],
+        "content": [
+            {
+                "title": "if, elif, else",
+                "text": "Percabangan memilih blok kode berdasarkan kondisi. Python menggunakan indentasi untuk menandai isi blok."
+            },
+            {
+                "title": "Urutan kondisi",
+                "text": "Python memeriksa kondisi dari atas. Ketika satu kondisi bernilai True, blok tersebut dijalankan dan cabang berikutnya dilewati."
+            }
+        ],
+        "example": "nilai = 82\n\nif nilai >= 90:\n    print(\"A\")\nelif nilai >= 80:\n    print(\"B\")\nelif nilai >= 70:\n    print(\"C\")\nelse:\n    print(\"Perlu belajar lagi\")",
+        "starter": "umur = 18\n\nif umur >= 17:\n    print(\"Boleh membuat SIM\")\nelse:\n    print(\"Belum cukup umur\")\n",
+        "exercise": "Buat program yang menentukan apakah sebuah angka positif, negatif, atau nol.",
+        "solution": "angka = float(input(\"Masukkan angka: \"))\nif angka > 0:\n    print(\"Positif\")\nelif angka < 0:\n    print(\"Negatif\")\nelse:\n    print(\"Nol\")"
+    },
+    {
+        "slug": "perulangan",
+        "title": "Perulangan",
+        "icon": "🔁",
+        "summary": "Mengulang instruksi dengan for dan while.",
+        "objectives": [
+            "Menggunakan for dan range()",
+            "Menggunakan while",
+            "Memahami kapan perulangan berhenti"
+        ],
+        "content": [
+            {
+                "title": "for",
+                "text": "for cocok ketika jumlah pengulangan atau kumpulan data sudah diketahui. range() sering digunakan untuk menghasilkan urutan angka."
+            },
+            {
+                "title": "while",
+                "text": "while terus berjalan selama kondisinya True. Pastikan kondisi akhirnya berubah agar tidak terjadi perulangan tanpa akhir."
+            }
+        ],
+        "example": "print(\"Dengan for:\")\nfor i in range(1, 6):\n    print(i)\n\nprint(\"Dengan while:\")\nx = 3\nwhile x > 0:\n    print(x)\n    x -= 1",
+        "starter": "for i in range(5):\n    print(\"Python\", i)\n",
+        "exercise": "Gunakan perulangan untuk menampilkan tabel perkalian 5 dari 5 x 1 sampai 5 x 10.",
+        "solution": "for i in range(1, 11):\n    print(f\"5 x {i} = {5 * i}\")"
+    },
+    {
+        "slug": "list",
+        "title": "List",
+        "icon": "📋",
+        "summary": "Menyimpan banyak nilai dalam satu struktur berurutan.",
+        "objectives": [
+            "Membuat list",
+            "Mengakses item dengan indeks",
+            "Menambah, mengubah, dan mengulang isi list"
+        ],
+        "content": [
+            {
+                "title": "List dan indeks",
+                "text": "List ditulis dengan kurung siku. Indeks dimulai dari 0, sehingga item pertama berada pada indeks 0."
+            },
+            {
+                "title": "Mengelola item",
+                "text": "append() menambahkan item ke akhir list. Item juga dapat diubah langsung melalui indeksnya. for dapat digunakan untuk membaca seluruh isi list."
+            }
+        ],
+        "example": "buah = [\"apel\", \"mangga\", \"jeruk\"]\nprint(buah[0])\n\nbuah.append(\"pisang\")\nbuah[1] = \"melon\"\n\nfor item in buah:\n    print(item)",
+        "starter": "nilai = [80, 75, 90]\nprint(nilai)\n",
+        "exercise": "Buat list berisi lima nilai ujian. Tampilkan jumlah data dan rata-ratanya.",
+        "solution": "nilai = [80, 75, 90, 85, 70]\nrata_rata = sum(nilai) / len(nilai)\nprint(\"Jumlah data:\", len(nilai))\nprint(\"Rata-rata:\", rata_rata)"
+    },
+    {
+        "slug": "dictionary",
+        "title": "Dictionary",
+        "icon": "🗂️",
+        "summary": "Menyimpan data sebagai pasangan key dan value.",
+        "objectives": [
+            "Membuat dictionary",
+            "Mengakses value melalui key",
+            "Menambah dan mengubah pasangan data"
+        ],
+        "content": [
+            {
+                "title": "Key dan value",
+                "text": "Dictionary menggunakan pasangan key: value dan ditulis dengan kurung kurawal. Key digunakan untuk mengambil nilai tertentu."
+            },
+            {
+                "title": "Cocok untuk data terstruktur",
+                "text": "Dictionary berguna ketika setiap nilai memiliki label, misalnya nama, umur, dan kota untuk satu orang."
+            }
+        ],
+        "example": "mahasiswa = {\n    \"nama\": \"Dina\",\n    \"umur\": 20,\n    \"kota\": \"Jambi\"\n}\n\nprint(mahasiswa[\"nama\"])\nmahasiswa[\"semester\"] = 4\n\nfor key, value in mahasiswa.items():\n    print(key, \":\", value)",
+        "starter": "buku = {\"judul\": \"Belajar Python\", \"tahun\": 2026}\nprint(buku[\"judul\"])",
+        "exercise": "Buat dictionary produk dengan key nama, harga, dan stok. Tambahkan key tersedia yang bernilai True jika stok lebih dari 0, lalu tampilkan seluruh data.",
+        "solution": "produk = {\"nama\": \"Keyboard\", \"harga\": 250000, \"stok\": 5}\nproduk[\"tersedia\"] = produk[\"stok\"] > 0\nfor key, value in produk.items():\n    print(key, \":\", value)"
+    },
+    {
+        "slug": "function",
+        "title": "Function",
+        "icon": "🧩",
+        "summary": "Membungkus kode agar dapat dipakai kembali.",
+        "objectives": [
+            "Membuat function dengan def",
+            "Menggunakan parameter",
+            "Mengembalikan nilai dengan return"
+        ],
+        "content": [
+            {
+                "title": "Membuat function",
+                "text": "Function dibuat dengan kata kunci def. Parameter menerima nilai dari pemanggil sehingga function dapat digunakan untuk berbagai input."
+            },
+            {
+                "title": "return",
+                "text": "return mengembalikan hasil dari function. Nilai itu dapat disimpan ke variabel atau digunakan dalam operasi lain."
+            }
+        ],
+        "example": "def sapa(nama):\n    return f\"Halo, {nama}!\"\n\ndef luas_persegi(sisi):\n    return sisi * sisi\n\nprint(sapa(\"Rani\"))\nprint(\"Luas:\", luas_persegi(6))",
+        "starter": "def tambah(a, b):\n    return a + b\n\nprint(tambah(4, 7))\n",
+        "exercise": "Buat function hitung_diskon(harga, persen) yang mengembalikan harga setelah diskon. Uji function dengan harga 100000 dan diskon 15%.",
+        "solution": "def hitung_diskon(harga, persen):\n    return harga - (harga * persen / 100)\n\nhasil = hitung_diskon(100000, 15)\nprint(hasil)"
+    }
+]
