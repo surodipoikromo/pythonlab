@@ -78,6 +78,14 @@ V1 memuat build Pyodide versi terpin dari jsDelivr. Python berjalan sepenuhnya d
 
 V1 sengaja kecil. Pengembangan opsional antara lain syntax highlighting, challenge checker otomatis, pencarian materi, dark mode, dan modul tambahan. Login/progress tracking tidak menjadi bagian dari konsep utama V1.
 
+## Live Demo
+
+PythonLab dapat dicoba langsung melalui GitHub Pages tanpa instalasi Laravel.
+
+**Demo:** https://surodipoikromo.github.io/pythonlab/
+
+Versi demo berjalan sepenuhnya di browser menggunakan Pyodide, sehingga pengguna dapat membaca materi dan menjalankan kode Python langsung tanpa memerlukan server Python terpisah.
+
 ## Lisensi
 
 MIT. Silakan gunakan sebagai bahan belajar atau portfolio.
